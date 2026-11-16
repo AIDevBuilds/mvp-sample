@@ -1,24 +1,22 @@
-# Android MVP (Model-View-Presenter) Architecture Basic Sample
+# Android MVP sample
 
-## Overview
+A minimal Model-View-Presenter skeleton for Android.
 
-This document provides an overview of the MVP architecture pattern used in Android development. MVP separates an application into three main components: Model, View, and Presenter, each with distinct responsibilities to enhance code maintainability, testability, and scalability.
+This is an older sample kept for reference. It is not actively maintained.
 
-## Components
+## What it shows
 
-### Model
+- `BasePresenter` and `BaseView`
+- One example screen, a splash, as `SplashFragment`, `SplashPresenter` and `SplashView`
 
-The **Model** represents the data and business logic of the application.  
+## Stack
 
-### View
+Java, `minSdkVersion 15`, `compileSdkVersion 27`. For a version with networking, see the MVP with RxJava and Retrofit sample.
 
-The **View** is responsible for presenting the user interface and handling user interactions. 
+## Run
 
-### Presenter
-
-The **Presenter** acts as the intermediary between the Model and View.  
+Open the project in Android Studio and run the `app` module. It uses an older Android Gradle plugin (3.1.x) and `compileSdkVersion 27`, so Android Studio may ask you to update the Gradle wrapper and plugin.
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
- 
+MIT. See [LICENSE](LICENSE).
